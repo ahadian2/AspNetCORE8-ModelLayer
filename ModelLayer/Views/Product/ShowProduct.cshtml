@@ -1,0 +1,36 @@
+﻿@model ModelLayer.Models.Product
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowProduct</title>
+</head>
+<body>
+
+
+    <div>
+        <span>ID</span>
+        <span>@Model.ProductId</span>
+    </div>
+    <div>
+        <span>Name</span>
+        <span>@Model.ProductName</span>
+    </div>
+    <div>
+        <span>Description</span>
+        <span>@Model.ProductDescription</span>
+    </div>
+    <div>
+        <span>Price</span>
+        <span>@Model.ProductPrice</span>
+    </div>
+
+
+</body>
+</html>

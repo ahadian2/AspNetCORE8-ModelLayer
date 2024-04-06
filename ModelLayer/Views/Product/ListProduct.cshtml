@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ModelLayer.Models.Product>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ListProduct</title>
+</head>
+<body>
+
+    @foreach (var item in Model)
+    {
+
+        <div style="background: #c9c9c9; padding: 5px; margin: 10px;">
+            <div>
+                <span>ID</span>
+                <span>@item.ProductId</span>
+            </div>
+            <div>
+                <span>Name</span>
+                <span>@item.ProductName</span>
+            </div>
+            <div>
+                <span>Description</span>
+                <span>@item.ProductDescription</span>
+            </div>
+            <div>
+                <span>Price</span>
+                <span>@item.ProductPrice</span>
+            </div>
+        </div>
+
+
+    }
+
+
+</body>
+</html>
